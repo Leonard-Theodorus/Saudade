@@ -7,18 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70F974A2B861442005C33E0 /* RepeatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70F97492B861442005C33E0 /* RepeatButton.swift */; };
+		D70F974C2B864B54005C33E0 /* CorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70F974B2B864B54005C33E0 /* CorrectView.swift */; };
+		D72878662B6C08CD006F3560 /* beat2-140-BPM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D72878642B6C08CD006F3560 /* beat2-140-BPM.mp3 */; };
+		D72878672B6C08CD006F3560 /* beat3-140-BPM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D72878652B6C08CD006F3560 /* beat3-140-BPM.mp3 */; };
+		D72878692B6C08DA006F3560 /* beat-1-120-bpm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D72878682B6C08DA006F3560 /* beat-1-120-bpm.mp3 */; };
+		D728786C2B6C0926006F3560 /* snare2-edited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D728786B2B6C0926006F3560 /* snare2-edited.mp3 */; };
+		D765D6FA2B6B393500B809A8 /* BeginningStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D6F92B6B393500B809A8 /* BeginningStory.swift */; };
+		D765D6FC2B6B395300B809A8 /* TouchLevelEndedStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D6FB2B6B395300B809A8 /* TouchLevelEndedStory.swift */; };
+		D765D6FE2B6B396F00B809A8 /* HearingLevelEndedStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D6FD2B6B396F00B809A8 /* HearingLevelEndedStory.swift */; };
+		D765D7002B6B398700B809A8 /* SpeechLevelEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D6FF2B6B398700B809A8 /* SpeechLevelEnded.swift */; };
+		D765D7022B6B399A00B809A8 /* EndingStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D7012B6B399A00B809A8 /* EndingStory.swift */; };
+		D765D7042B6B3EEF00B809A8 /* TouchLevelEndingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D7032B6B3EEF00B809A8 /* TouchLevelEndingView.swift */; };
+		D765D7062B6B4E3000B809A8 /* HearingLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D7052B6B4E3000B809A8 /* HearingLevelView.swift */; };
+		D765D7082B6B5C9900B809A8 /* HearingLevel + UpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D7072B6B5C9900B809A8 /* HearingLevel + UpdateDelegate.swift */; };
+		D765D70A2B6B601A00B809A8 /* HearingLevelEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D7092B6B601A00B809A8 /* HearingLevelEnded.swift */; };
+		D76D55872B66287A0080192D /* HearingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D55862B66287A0080192D /* HearingLevel.swift */; };
+		D76D55912B6655290080192D /* TouchLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D55902B6655290080192D /* TouchLevelView.swift */; };
+		D76D55932B665F380080192D /* TouchLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D55922B665F380080192D /* TouchLevelScene.swift */; };
+		D76D55972B668D5E0080192D /* TouchLevelScn.sks in Resources */ = {isa = PBXBuildFile; fileRef = D76D55962B668D5E0080192D /* TouchLevelScn.sks */; };
+		D76D55992B66BCC50080192D /* vibrate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76D55982B66BCC50080192D /* vibrate.mp3 */; };
+		D78833A22B836B6600ED4795 /* SpeechLevelBeginning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78833A12B836B6600ED4795 /* SpeechLevelBeginning.swift */; };
+		D78833A42B836BE700ED4795 /* SpeechLevelTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78833A32B836BE700ED4795 /* SpeechLevelTutorial.swift */; };
 		D78A1D952B65236D00B4E435 /* DanSeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A1D942B65236D00B4E435 /* DanSeApp.swift */; };
-		D78A1D972B65236D00B4E435 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A1D962B65236D00B4E435 /* ContentView.swift */; };
+		D78A1D972B65236D00B4E435 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A1D962B65236D00B4E435 /* MainMenu.swift */; };
 		D78A1D992B65236E00B4E435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78A1D982B65236E00B4E435 /* Assets.xcassets */; };
 		D78A1D9C2B65236E00B4E435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78A1D9B2B65236E00B4E435 /* Preview Assets.xcassets */; };
+		D7B5DEA72B67771B000F5642 /* SpeechLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DEA62B67771B000F5642 /* SpeechLevelView.swift */; };
+		D7B5DEB12B679F2F000F5642 /* SpechLevelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DEB02B679F2F000F5642 /* SpechLevelHelper.swift */; };
+		D7B5DEB32B67A97E000F5642 /* Instruments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DEB22B67A97E000F5642 /* Instruments.swift */; };
+		D7B5DEC32B67C1C6000F5642 /* kick-edited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B5DEC02B67C1C6000F5642 /* kick-edited.mp3 */; };
+		D7B5DEC42B67C1C6000F5642 /* hihat-edited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B5DEC12B67C1C6000F5642 /* hihat-edited.mp3 */; };
+		D7B5DEC72B67C2E9000F5642 /* snare1-edited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B5DEC62B67C2E9000F5642 /* snare1-edited.mp3 */; };
+		D7B5DED02B67C868000F5642 /* vibrate-edited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B5DECF2B67C868000F5642 /* vibrate-edited.mp3 */; };
+		D7B5DED22B67CAD8000F5642 /* TouchLevelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DED12B67CAD8000F5642 /* TouchLevelHelper.swift */; };
+		D7B5DED62B67E5B5000F5642 /* HearingLevelViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DED52B67E5B5000F5642 /* HearingLevelViewRepresentable.swift */; };
+		D7B5DEDA2B680B85000F5642 /* HearingLevel + ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DED92B680B85000F5642 /* HearingLevel + ARSCNViewDelegate.swift */; };
+		D7B5DEDC2B680BE5000F5642 /* HearingLevel + HitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DEDB2B680BE5000F5642 /* HearingLevel + HitTesting.swift */; };
+		D7B5DEDE2B68140A000F5642 /* Crosshair.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5DEDD2B68140A000F5642 /* Crosshair.swift */; };
+		D7C031362B69078100466529 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C031352B69078100466529 /* Constants.swift */; };
+		D7C031392B691C4600466529 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C031382B691C4600466529 /* Utils.swift */; };
+		D7C0313B2B695B1B00466529 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0313A2B695B1B00466529 /* Target.swift */; };
+		D7C0B3632B865D1800F81A3A /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7C0B3622B865D1800F81A3A /* correct.mp3 */; };
+		D7DF3A212B7911EC00940264 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A202B7911EC00940264 /* PlayButton.swift */; };
+		D7DF3A2B2B79D35600940264 /* CrimsonText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A242B79D35600940264 /* CrimsonText-SemiBold.ttf */; };
+		D7DF3A2C2B79D35600940264 /* CrimsonText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A252B79D35600940264 /* CrimsonText-Bold.ttf */; };
+		D7DF3A2D2B79D35600940264 /* CrimsonText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A262B79D35600940264 /* CrimsonText-Regular.ttf */; };
+		D7DF3A2E2B79D35600940264 /* CrimsonText-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A272B79D35600940264 /* CrimsonText-SemiBoldItalic.ttf */; };
+		D7DF3A302B79D35600940264 /* CrimsonText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A292B79D35600940264 /* CrimsonText-BoldItalic.ttf */; };
+		D7DF3A312B79D35600940264 /* CrimsonText-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A2A2B79D35600940264 /* CrimsonText-Italic.ttf */; };
+		D7DF3A372B79D35E00940264 /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A332B79D35E00940264 /* LibreBaskerville-Italic.ttf */; };
+		D7DF3A382B79D35E00940264 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A342B79D35E00940264 /* LibreBaskerville-Regular.ttf */; };
+		D7DF3A3A2B79D35E00940264 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A362B79D35E00940264 /* LibreBaskerville-Bold.ttf */; };
+		D7DF3A3D2B7A17E800940264 /* TouchLevelBeginning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A3C2B7A17E800940264 /* TouchLevelBeginning.swift */; };
+		D7DF3A3F2B7A1E5F00940264 /* TouchLevelTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A3E2B7A1E5F00940264 /* TouchLevelTutorial.swift */; };
+		D7DF3A432B7B4D6500940264 /* HearingLevelBeginning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A422B7B4D6500940264 /* HearingLevelBeginning.swift */; };
+		D7DF3A452B7B505E00940264 /* HearingLevelTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A442B7B505E00940264 /* HearingLevelTutorial.swift */; };
+		D7F874A52B84AB88009DA9B4 /* PlayMelodyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F874A42B84AB88009DA9B4 /* PlayMelodyButton.swift */; };
+		D7F874A72B84E3F5009DA9B4 /* SpeechLevel + Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F874A62B84E3F5009DA9B4 /* SpeechLevel + Animate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D70F97492B861442005C33E0 /* RepeatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatButton.swift; sourceTree = "<group>"; };
+		D70F974B2B864B54005C33E0 /* CorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectView.swift; sourceTree = "<group>"; };
+		D72878642B6C08CD006F3560 /* beat2-140-BPM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beat2-140-BPM.mp3"; sourceTree = "<group>"; };
+		D72878652B6C08CD006F3560 /* beat3-140-BPM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beat3-140-BPM.mp3"; sourceTree = "<group>"; };
+		D72878682B6C08DA006F3560 /* beat-1-120-bpm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beat-1-120-bpm.mp3"; sourceTree = "<group>"; };
+		D728786B2B6C0926006F3560 /* snare2-edited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "snare2-edited.mp3"; sourceTree = "<group>"; };
+		D765D6F92B6B393500B809A8 /* BeginningStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningStory.swift; sourceTree = "<group>"; };
+		D765D6FB2B6B395300B809A8 /* TouchLevelEndedStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelEndedStory.swift; sourceTree = "<group>"; };
+		D765D6FD2B6B396F00B809A8 /* HearingLevelEndedStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelEndedStory.swift; sourceTree = "<group>"; };
+		D765D6FF2B6B398700B809A8 /* SpeechLevelEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeechLevelEnded.swift; path = ../../StoryViews/SpeechLevelEnded.swift; sourceTree = "<group>"; };
+		D765D7012B6B399A00B809A8 /* EndingStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingStory.swift; sourceTree = "<group>"; };
+		D765D7032B6B3EEF00B809A8 /* TouchLevelEndingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelEndingView.swift; sourceTree = "<group>"; };
+		D765D7052B6B4E3000B809A8 /* HearingLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelView.swift; sourceTree = "<group>"; };
+		D765D7072B6B5C9900B809A8 /* HearingLevel + UpdateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HearingLevel + UpdateDelegate.swift"; sourceTree = "<group>"; };
+		D765D7092B6B601A00B809A8 /* HearingLevelEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelEnded.swift; sourceTree = "<group>"; };
+		D76D55862B66287A0080192D /* HearingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevel.swift; sourceTree = "<group>"; };
+		D76D55902B6655290080192D /* TouchLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelView.swift; sourceTree = "<group>"; };
+		D76D55922B665F380080192D /* TouchLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelScene.swift; sourceTree = "<group>"; };
+		D76D55962B668D5E0080192D /* TouchLevelScn.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TouchLevelScn.sks; sourceTree = "<group>"; };
+		D76D55982B66BCC50080192D /* vibrate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vibrate.mp3; sourceTree = "<group>"; };
+		D78833A12B836B6600ED4795 /* SpeechLevelBeginning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechLevelBeginning.swift; sourceTree = "<group>"; };
+		D78833A32B836BE700ED4795 /* SpeechLevelTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechLevelTutorial.swift; sourceTree = "<group>"; };
 		D78A1D912B65236D00B4E435 /* DanSe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanSe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78A1D942B65236D00B4E435 /* DanSeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanSeApp.swift; sourceTree = "<group>"; };
-		D78A1D962B65236D00B4E435 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D78A1D962B65236D00B4E435 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		D78A1D982B65236E00B4E435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D78A1D9B2B65236E00B4E435 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7B5DEA62B67771B000F5642 /* SpeechLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechLevelView.swift; sourceTree = "<group>"; };
+		D7B5DEB02B679F2F000F5642 /* SpechLevelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpechLevelHelper.swift; sourceTree = "<group>"; };
+		D7B5DEB22B67A97E000F5642 /* Instruments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruments.swift; sourceTree = "<group>"; };
+		D7B5DEC02B67C1C6000F5642 /* kick-edited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kick-edited.mp3"; sourceTree = "<group>"; };
+		D7B5DEC12B67C1C6000F5642 /* hihat-edited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "hihat-edited.mp3"; sourceTree = "<group>"; };
+		D7B5DEC62B67C2E9000F5642 /* snare1-edited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "snare1-edited.mp3"; sourceTree = "<group>"; };
+		D7B5DECF2B67C868000F5642 /* vibrate-edited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "vibrate-edited.mp3"; sourceTree = "<group>"; };
+		D7B5DED12B67CAD8000F5642 /* TouchLevelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelHelper.swift; sourceTree = "<group>"; };
+		D7B5DED52B67E5B5000F5642 /* HearingLevelViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelViewRepresentable.swift; sourceTree = "<group>"; };
+		D7B5DED92B680B85000F5642 /* HearingLevel + ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HearingLevel + ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		D7B5DEDB2B680BE5000F5642 /* HearingLevel + HitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HearingLevel + HitTesting.swift"; sourceTree = "<group>"; };
+		D7B5DEDD2B68140A000F5642 /* Crosshair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosshair.swift; sourceTree = "<group>"; };
+		D7C031352B69078100466529 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D7C031382B691C4600466529 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D7C0313A2B695B1B00466529 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		D7C0B3622B865D1800F81A3A /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		D7DF3A202B7911EC00940264 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		D7DF3A242B79D35600940264 /* CrimsonText-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-SemiBold.ttf"; sourceTree = "<group>"; };
+		D7DF3A252B79D35600940264 /* CrimsonText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-Bold.ttf"; sourceTree = "<group>"; };
+		D7DF3A262B79D35600940264 /* CrimsonText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-Regular.ttf"; sourceTree = "<group>"; };
+		D7DF3A272B79D35600940264 /* CrimsonText-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D7DF3A292B79D35600940264 /* CrimsonText-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D7DF3A2A2B79D35600940264 /* CrimsonText-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-Italic.ttf"; sourceTree = "<group>"; };
+		D7DF3A332B79D35E00940264 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
+		D7DF3A342B79D35E00940264 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
+		D7DF3A362B79D35E00940264 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
+		D7DF3A3B2B79D3F400940264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D7DF3A3C2B7A17E800940264 /* TouchLevelBeginning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelBeginning.swift; sourceTree = "<group>"; };
+		D7DF3A3E2B7A1E5F00940264 /* TouchLevelTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelTutorial.swift; sourceTree = "<group>"; };
+		D7DF3A422B7B4D6500940264 /* HearingLevelBeginning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelBeginning.swift; sourceTree = "<group>"; };
+		D7DF3A442B7B505E00940264 /* HearingLevelTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelTutorial.swift; sourceTree = "<group>"; };
+		D7F874A42B84AB88009DA9B4 /* PlayMelodyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMelodyButton.swift; sourceTree = "<group>"; };
+		D7F874A62B84E3F5009DA9B4 /* SpeechLevel + Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpeechLevel + Animate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +141,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D72878632B6C08B8006F3560 /* Beats */ = {
+			isa = PBXGroup;
+			children = (
+				D7C0B3622B865D1800F81A3A /* correct.mp3 */,
+				D72878682B6C08DA006F3560 /* beat-1-120-bpm.mp3 */,
+				D72878642B6C08CD006F3560 /* beat2-140-BPM.mp3 */,
+				D72878652B6C08CD006F3560 /* beat3-140-BPM.mp3 */,
+			);
+			path = Beats;
+			sourceTree = "<group>";
+		};
+		D728786A2B6C0916006F3560 /* Intruments */ = {
+			isa = PBXGroup;
+			children = (
+				D7B5DEB22B67A97E000F5642 /* Instruments.swift */,
+				D7B5DEC12B67C1C6000F5642 /* hihat-edited.mp3 */,
+				D7B5DEC02B67C1C6000F5642 /* kick-edited.mp3 */,
+				D7B5DEC62B67C2E9000F5642 /* snare1-edited.mp3 */,
+				D728786B2B6C0926006F3560 /* snare2-edited.mp3 */,
+			);
+			path = Intruments;
+			sourceTree = "<group>";
+		};
+		D765D6F82B6B392600B809A8 /* StoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				D765D6F92B6B393500B809A8 /* BeginningStory.swift */,
+				D765D6FB2B6B395300B809A8 /* TouchLevelEndedStory.swift */,
+				D765D6FD2B6B396F00B809A8 /* HearingLevelEndedStory.swift */,
+				D765D7012B6B399A00B809A8 /* EndingStory.swift */,
+			);
+			path = StoryViews;
+			sourceTree = "<group>";
+		};
+		D78833A02B836B5900ED4795 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				D765D6FF2B6B398700B809A8 /* SpeechLevelEnded.swift */,
+				D78833A12B836B6600ED4795 /* SpeechLevelBeginning.swift */,
+				D78833A32B836BE700ED4795 /* SpeechLevelTutorial.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
 		D78A1D882B65236D00B4E435 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +204,18 @@
 		D78A1D932B65236D00B4E435 /* DanSe */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF3A3B2B79D3F400940264 /* Info.plist */,
+				D7DF3A222B79D33900940264 /* Fonts */,
+				D765D6F82B6B392600B809A8 /* StoryViews */,
+				D7B5DECA2B67C37B000F5642 /* SpeechLevel */,
+				D7B5DEC92B67C378000F5642 /* HearingLevel */,
+				D7B5DEC82B67C374000F5642 /* TouchLevel */,
 				D78A1D942B65236D00B4E435 /* DanSeApp.swift */,
-				D78A1D962B65236D00B4E435 /* ContentView.swift */,
+				D7DF3A1F2B7911DA00940264 /* MainMenu */,
 				D78A1D982B65236E00B4E435 /* Assets.xcassets */,
 				D78A1D9A2B65236E00B4E435 /* Preview Content */,
+				D7C031352B69078100466529 /* Constants.swift */,
+				D7C031382B691C4600466529 /* Utils.swift */,
 			);
 			path = DanSe;
 			sourceTree = "<group>";
@@ -65,6 +226,121 @@
 				D78A1D9B2B65236E00B4E435 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7B5DEC82B67C374000F5642 /* TouchLevel */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A412B7B4D5100940264 /* Stories */,
+				D76D55902B6655290080192D /* TouchLevelView.swift */,
+				D76D55922B665F380080192D /* TouchLevelScene.swift */,
+				D76D55962B668D5E0080192D /* TouchLevelScn.sks */,
+				D7B5DECF2B67C868000F5642 /* vibrate-edited.mp3 */,
+				D76D55982B66BCC50080192D /* vibrate.mp3 */,
+				D7B5DED12B67CAD8000F5642 /* TouchLevelHelper.swift */,
+			);
+			path = TouchLevel;
+			sourceTree = "<group>";
+		};
+		D7B5DEC92B67C378000F5642 /* HearingLevel */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A402B7B4D4400940264 /* Stories */,
+				D76D55862B66287A0080192D /* HearingLevel.swift */,
+				D7B5DED92B680B85000F5642 /* HearingLevel + ARSCNViewDelegate.swift */,
+				D7B5DED52B67E5B5000F5642 /* HearingLevelViewRepresentable.swift */,
+				D765D7052B6B4E3000B809A8 /* HearingLevelView.swift */,
+				D7B5DEDB2B680BE5000F5642 /* HearingLevel + HitTesting.swift */,
+				D765D7072B6B5C9900B809A8 /* HearingLevel + UpdateDelegate.swift */,
+				D7B5DEDF2B681486000F5642 /* Components */,
+			);
+			path = HearingLevel;
+			sourceTree = "<group>";
+		};
+		D7B5DECA2B67C37B000F5642 /* SpeechLevel */ = {
+			isa = PBXGroup;
+			children = (
+				D78833A02B836B5900ED4795 /* Stories */,
+				D728786A2B6C0916006F3560 /* Intruments */,
+				D72878632B6C08B8006F3560 /* Beats */,
+				D7B5DEA62B67771B000F5642 /* SpeechLevelView.swift */,
+				D7F874A62B84E3F5009DA9B4 /* SpeechLevel + Animate.swift */,
+				D7B5DEB02B679F2F000F5642 /* SpechLevelHelper.swift */,
+				D7F874A42B84AB88009DA9B4 /* PlayMelodyButton.swift */,
+				D70F97492B861442005C33E0 /* RepeatButton.swift */,
+				D70F974B2B864B54005C33E0 /* CorrectView.swift */,
+			);
+			path = SpeechLevel;
+			sourceTree = "<group>";
+		};
+		D7B5DEDF2B681486000F5642 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D7B5DEDD2B68140A000F5642 /* Crosshair.swift */,
+				D7C0313A2B695B1B00466529 /* Target.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D7DF3A1F2B7911DA00940264 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D78A1D962B65236D00B4E435 /* MainMenu.swift */,
+				D7DF3A202B7911EC00940264 /* PlayButton.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		D7DF3A222B79D33900940264 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A322B79D35E00940264 /* Libre_Baskerville */,
+				D7DF3A232B79D35600940264 /* Crimson_Text */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D7DF3A232B79D35600940264 /* Crimson_Text */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A242B79D35600940264 /* CrimsonText-SemiBold.ttf */,
+				D7DF3A252B79D35600940264 /* CrimsonText-Bold.ttf */,
+				D7DF3A262B79D35600940264 /* CrimsonText-Regular.ttf */,
+				D7DF3A272B79D35600940264 /* CrimsonText-SemiBoldItalic.ttf */,
+				D7DF3A292B79D35600940264 /* CrimsonText-BoldItalic.ttf */,
+				D7DF3A2A2B79D35600940264 /* CrimsonText-Italic.ttf */,
+			);
+			path = Crimson_Text;
+			sourceTree = "<group>";
+		};
+		D7DF3A322B79D35E00940264 /* Libre_Baskerville */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A332B79D35E00940264 /* LibreBaskerville-Italic.ttf */,
+				D7DF3A342B79D35E00940264 /* LibreBaskerville-Regular.ttf */,
+				D7DF3A362B79D35E00940264 /* LibreBaskerville-Bold.ttf */,
+			);
+			path = Libre_Baskerville;
+			sourceTree = "<group>";
+		};
+		D7DF3A402B7B4D4400940264 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				D765D7092B6B601A00B809A8 /* HearingLevelEnded.swift */,
+				D7DF3A422B7B4D6500940264 /* HearingLevelBeginning.swift */,
+				D7DF3A442B7B505E00940264 /* HearingLevelTutorial.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		D7DF3A412B7B4D5100940264 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				D765D7032B6B3EEF00B809A8 /* TouchLevelEndingView.swift */,
+				D7DF3A3C2B7A17E800940264 /* TouchLevelBeginning.swift */,
+				D7DF3A3E2B7A1E5F00940264 /* TouchLevelTutorial.swift */,
+			);
+			path = Stories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +402,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78A1D9C2B65236E00B4E435 /* Preview Assets.xcassets in Resources */,
+				D7DF3A2B2B79D35600940264 /* CrimsonText-SemiBold.ttf in Resources */,
+				D7DF3A312B79D35600940264 /* CrimsonText-Italic.ttf in Resources */,
+				D7B5DED02B67C868000F5642 /* vibrate-edited.mp3 in Resources */,
+				D72878672B6C08CD006F3560 /* beat3-140-BPM.mp3 in Resources */,
+				D76D55972B668D5E0080192D /* TouchLevelScn.sks in Resources */,
+				D7B5DEC72B67C2E9000F5642 /* snare1-edited.mp3 in Resources */,
+				D72878662B6C08CD006F3560 /* beat2-140-BPM.mp3 in Resources */,
+				D728786C2B6C0926006F3560 /* snare2-edited.mp3 in Resources */,
+				D7C0B3632B865D1800F81A3A /* correct.mp3 in Resources */,
+				D7DF3A2C2B79D35600940264 /* CrimsonText-Bold.ttf in Resources */,
+				D7DF3A2D2B79D35600940264 /* CrimsonText-Regular.ttf in Resources */,
+				D7DF3A372B79D35E00940264 /* LibreBaskerville-Italic.ttf in Resources */,
+				D7B5DEC32B67C1C6000F5642 /* kick-edited.mp3 in Resources */,
+				D7B5DEC42B67C1C6000F5642 /* hihat-edited.mp3 in Resources */,
+				D7DF3A382B79D35E00940264 /* LibreBaskerville-Regular.ttf in Resources */,
+				D7DF3A2E2B79D35600940264 /* CrimsonText-SemiBoldItalic.ttf in Resources */,
+				D76D55992B66BCC50080192D /* vibrate.mp3 in Resources */,
+				D72878692B6C08DA006F3560 /* beat-1-120-bpm.mp3 in Resources */,
+				D7DF3A3A2B79D35E00940264 /* LibreBaskerville-Bold.ttf in Resources */,
+				D7DF3A302B79D35600940264 /* CrimsonText-BoldItalic.ttf in Resources */,
 				D78A1D992B65236E00B4E435 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +433,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D78A1D972B65236D00B4E435 /* ContentView.swift in Sources */,
+				D7B5DED22B67CAD8000F5642 /* TouchLevelHelper.swift in Sources */,
+				D7DF3A212B7911EC00940264 /* PlayButton.swift in Sources */,
+				D765D6FE2B6B396F00B809A8 /* HearingLevelEndedStory.swift in Sources */,
+				D7B5DEB32B67A97E000F5642 /* Instruments.swift in Sources */,
+				D765D7062B6B4E3000B809A8 /* HearingLevelView.swift in Sources */,
+				D7B5DEDC2B680BE5000F5642 /* HearingLevel + HitTesting.swift in Sources */,
+				D7B5DEDA2B680B85000F5642 /* HearingLevel + ARSCNViewDelegate.swift in Sources */,
+				D7DF3A432B7B4D6500940264 /* HearingLevelBeginning.swift in Sources */,
+				D7B5DED62B67E5B5000F5642 /* HearingLevelViewRepresentable.swift in Sources */,
+				D765D7082B6B5C9900B809A8 /* HearingLevel + UpdateDelegate.swift in Sources */,
+				D76D55872B66287A0080192D /* HearingLevel.swift in Sources */,
+				D765D7002B6B398700B809A8 /* SpeechLevelEnded.swift in Sources */,
+				D765D7042B6B3EEF00B809A8 /* TouchLevelEndingView.swift in Sources */,
+				D76D55912B6655290080192D /* TouchLevelView.swift in Sources */,
+				D78833A22B836B6600ED4795 /* SpeechLevelBeginning.swift in Sources */,
+				D7F874A52B84AB88009DA9B4 /* PlayMelodyButton.swift in Sources */,
+				D7C031362B69078100466529 /* Constants.swift in Sources */,
+				D70F974C2B864B54005C33E0 /* CorrectView.swift in Sources */,
+				D7B5DEB12B679F2F000F5642 /* SpechLevelHelper.swift in Sources */,
+				D7C031392B691C4600466529 /* Utils.swift in Sources */,
+				D7DF3A3F2B7A1E5F00940264 /* TouchLevelTutorial.swift in Sources */,
+				D76D55932B665F380080192D /* TouchLevelScene.swift in Sources */,
+				D7B5DEA72B67771B000F5642 /* SpeechLevelView.swift in Sources */,
+				D765D6FA2B6B393500B809A8 /* BeginningStory.swift in Sources */,
+				D765D7022B6B399A00B809A8 /* EndingStory.swift in Sources */,
+				D7C0313B2B695B1B00466529 /* Target.swift in Sources */,
+				D78833A42B836BE700ED4795 /* SpeechLevelTutorial.swift in Sources */,
+				D7F874A72B84E3F5009DA9B4 /* SpeechLevel + Animate.swift in Sources */,
+				D78A1D972B65236D00B4E435 /* MainMenu.swift in Sources */,
+				D7DF3A3D2B7A17E800940264 /* TouchLevelBeginning.swift in Sources */,
+				D70F974A2B861442005C33E0 /* RepeatButton.swift in Sources */,
 				D78A1D952B65236D00B4E435 /* DanSeApp.swift in Sources */,
+				D7B5DEDE2B68140A000F5642 /* Crosshair.swift in Sources */,
+				D765D6FC2B6B395300B809A8 /* TouchLevelEndedStory.swift in Sources */,
+				D765D70A2B6B601A00B809A8 /* HearingLevelEnded.swift in Sources */,
+				D7DF3A452B7B505E00940264 /* HearingLevelTutorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +605,13 @@
 				DEVELOPMENT_TEAM = 6H4427J3SZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DanSe/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "In order to complete this quest, DanSe needs to track your face";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +636,13 @@
 				DEVELOPMENT_TEAM = 6H4427J3SZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DanSe/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "In order to complete this quest, DanSe needs to track your face";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
