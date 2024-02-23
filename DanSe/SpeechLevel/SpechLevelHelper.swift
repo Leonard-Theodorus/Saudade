@@ -36,9 +36,9 @@ final class SpeechLevelHelper : NSObject{
     
     static var beatMap : [Int : [Int]] = 
     [
-        1  : [0, 480, 420, 500, 480, 520, 400, 0], //TODO: Recalculate this
+        1  : [0, 480, 420, 500, 480, 520, 400, 0],
         2  : [0, 530, 170, 339, 331, 510, 197, 332, 338, 0],
-        3 : [0, 468, 175, 295, 458, 183, 284, 658, 413, 156, 342, 265, 138, 186, 312,0] //TODO: Smooth-in ini (kasih jarak masing-masing lebihan)
+        3 : [0, 468, 175, 295, 458, 183, 284, 658, 413, 156, 342, 265, 138, 216, 312,0] //TODO: Smooth-in ini (kasih jarak masing-masing lebihan)
     ]
     
     var beats : [String] = []

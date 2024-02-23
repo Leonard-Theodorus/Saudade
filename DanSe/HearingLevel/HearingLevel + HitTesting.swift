@@ -53,7 +53,6 @@ extension HearingLevel {
                     self.randomizeTargetPosition()
                 }
                 else if(self.gameScore == 3){
-                    //TODO: Bikin level nya selesai (3 ato 5 level)
                     self.sceneView.session.pause()
                     self.sceneView.removeFromSuperview()
                     self.delegate?.updateScore(completed: true)

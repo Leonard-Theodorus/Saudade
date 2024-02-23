@@ -16,12 +16,16 @@ struct SpeechLevelView : View {
     var snareUrl : URL? = Bundle.main.url(forResource: "snare1-edited", withExtension: "mp3")
     var snare2Url : URL? = Bundle.main.url(forResource: "snare2-edited", withExtension: "mp3")
     var bellUrl : URL? = Bundle.main.url(forResource: "correct", withExtension: "mp3")
+    var wrongBellUrl : URL? = Bundle.main.url(forResource: "wrong", withExtension: "mp3")
+    
     
     @State var gameLevel : Int = 0
     
     @State var play : Bool = false
     
-    @State var answer : String = "$"
+    @State var correctAnswer : String = "$"
+    
+    @State var correctAnswerCopy : String = ""
     
     @State var gameScore : Int = 0
     
@@ -37,9 +41,13 @@ struct SpeechLevelView : View {
     
     @State var levelCorrect : Bool = false
     
+    @State var levelIncorrect : Bool = false
+    
     @State var levelDone : Bool = false
     
     @State var moveToNextScene : Bool = false
+    
+    @State var answer : String = ""
     
     var helper : SpeechLevelHelper = SpeechLevelHelper()
     
@@ -61,8 +69,9 @@ struct SpeechLevelView : View {
                                 Button{
                                     guard let kickUrl else {return}
                                     helper.playInstrument(fileUrl: kickUrl)
-                                    if(answer.first == "b"){
-                                        answer.removeFirst()
+                                    answer += "b"
+                                    if(correctAnswer.first == "b"){
+                                        correctAnswer.removeFirst()
                                     }
                                     else{
                                         animateView(at: 0)
@@ -84,8 +93,9 @@ struct SpeechLevelView : View {
                                 Button{
                                     guard let hihatUrl else {return}
                                     helper.playInstrument(fileUrl: hihatUrl)
-                                    if(answer.first == "t"){
-                                        answer.removeFirst()
+                                    answer += "t"
+                                    if(correctAnswer.first == "t"){
+                                        correctAnswer.removeFirst()
                                     }
                                     else{
                                         animateView(at: 1)
@@ -113,8 +123,9 @@ struct SpeechLevelView : View {
                                     else{
                                         helper.playInstrument(fileUrl: snareUrl)
                                     }
-                                    if(answer.first == "k"){
-                                        answer.removeFirst()
+                                    answer += "k"
+                                    if(correctAnswer.first == "k"){
+                                        correctAnswer.removeFirst()
                                     }
                                     else{
                                         animateView(at: 2)
@@ -136,31 +147,45 @@ struct SpeechLevelView : View {
                             }
                         }
                         .onChange(of: answer, { oldValue, newValue in
-                            if(newValue == ""){
-                                withAnimation(.easeInOut(duration: 0.2)) {
-                                    levelCorrect = true
-                                    play = false
-                                    playDisabled = true
-                                }
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-                                    withAnimation(.easeInOut) {
-                                        if (levelCorrect) {levelCorrect.toggle()}
-                                        if (playDisabled) {playDisabled.toggle()}
-                                        repeatVisible = false
-                                        gameScore += 1
-                                        if (gameScore == 3){
-                                            levelDone = true
-                                        }
-                                        for i in 0 ..< 3{
-                                            wrongInstrument[i] = false
-                                        }
+                            if(answer.count == correctAnswerCopy.count){
+                                if(answer == correctAnswerCopy){
+                                    //MARK: Kalo bener
+                                    withAnimation(.easeInOut(duration: 0.2)) {
+                                        levelCorrect = true
+                                        play = false
+                                        playDisabled = true
                                     }
-                                    
-                                })
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                                        withAnimation(.easeInOut) {
+                                            if (levelCorrect) {levelCorrect.toggle()}
+                                            if (playDisabled) {playDisabled.toggle()}
+                                            repeatVisible = false
+                                            gameScore += 1
+                                            answer = ""
+                                            if (gameScore == 3){
+                                                levelDone = true
+                                            }
+                                            for i in 0 ..< 3{
+                                                wrongInstrument[i] = false
+                                            }
+                                        }
+                                        
+                                    })
+                                }
+                                else{
+                                    //MARK: Salah
+                                    withAnimation(.easeInOut) {
+                                        levelIncorrect = true
+                                        play = false
+                                        playDisabled = true
+                                    }
+                                }
+                                
                             }
                         })
                         .onAppear{
-                            answer = helper.getResult(for: gameLevel)
+                            correctAnswer = helper.getResult(for: gameLevel)
+                            correctAnswerCopy = correctAnswer
                         }
                     }
                     else{
@@ -253,13 +278,18 @@ struct SpeechLevelView : View {
                             .font(.custom(Constants.contentFontName, size: 40, relativeTo: .largeTitle))
                             .foregroundStyle(.black1)
                     }
-                    else if (!play && playDisabled && !levelCorrect){
+                    else if (!play && playDisabled && !levelCorrect && !levelIncorrect){
                         Text("Listen carefully to the melody")
                             .font(.custom(Constants.contentFontName, size: 40, relativeTo: .largeTitle))
                             .foregroundStyle(.black1)
                     }
                     else if (!play && levelCorrect){
                         Text("Correctly Mimicked!")
+                            .font(.custom(Constants.contentFontName, size: 40, relativeTo: .largeTitle))
+                            .foregroundStyle(.black1)
+                    }
+                    else if (!play && levelIncorrect){
+                        Text("Incorrectly Mimicked!")
                             .font(.custom(Constants.contentFontName, size: 40, relativeTo: .largeTitle))
                             .foregroundStyle(.black1)
                     }
@@ -278,8 +308,10 @@ struct SpeechLevelView : View {
                                 for i in 0 ..< 3{
                                     wrongInstrument[i] = false
                                 }
-                                answer = helper.getResult(for: gameLevel)
+                                answer = ""
+                                correctAnswer = helper.getResult(for: gameLevel)
                                 gameLevel -= 1
+                                levelIncorrect = false
                                 play = false
                                 playDisabled = false
                             } label: {
@@ -298,6 +330,13 @@ struct SpeechLevelView : View {
                             helper.playCorrectBell(fileUrl: bellUrl)
                         }
                 }
+                if (levelIncorrect){
+                    WrongView()
+                        .onAppear{
+                            guard let wrongBellUrl else {return}
+                            helper.playCorrectBell(fileUrl: wrongBellUrl)
+                        }
+                }
                 
             }
             
@@ -307,7 +346,7 @@ struct SpeechLevelView : View {
         }, content: {
             SpeechLevelEnded()
                 .presentationBackground {
-                    Color.white.opacity(0.6)
+                    Color.white.opacity(0.8)
                 }
             
         })
@@ -318,5 +357,5 @@ struct SpeechLevelView : View {
     }
 }
 #Preview {
-    SpeechLevelView(kickUrl: nil, hihatUrl: nil, snareUrl: nil, snare2Url: nil, gameLevel: 0, play: true, answer: "", gameScore: 0, playDisabled: true, beatVisible: true, currentInstrument: "b", helper: SpeechLevelHelper())
+    SpeechLevelView(levelDone: true)
 }

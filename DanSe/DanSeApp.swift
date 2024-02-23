@@ -14,7 +14,9 @@ struct DanSeApp: App {
         //TODO: Tulis Ending story and conclude
         //TODO: Add music pas mau story level 3
         WindowGroup {
-            MainMenu()
+            NavigationStack{
+                SpeechLevelView()
+            }
         }
     }
 }

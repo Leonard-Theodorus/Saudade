@@ -24,7 +24,7 @@ struct HearingLevelView: View {
                     }, content: {
                         HearingLevelEnded(dismiss: $levelPassed)
                             .presentationBackground {
-                                Color.white.opacity(0.6)
+                                Color.white.opacity(0.8)
                             }
                     })
                     .navigationBarBackButtonHidden()
@@ -38,5 +38,5 @@ struct HearingLevelView: View {
 }
 
 #Preview {
-    HearingLevelView()
+    HearingLevelView(levelPassed: true)
 }
