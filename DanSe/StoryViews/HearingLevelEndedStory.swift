@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HearingLevelEndedStory: View {
+    let fontSize : CGFloat = Constants.currentDevice == .pad ? 36 : 17
+    let spacing : CGFloat = Constants.currentDevice == .pad ? 20 : 10
     var body: some View {
         ZStack{
             Color.black
@@ -16,26 +18,26 @@ struct HearingLevelEndedStory: View {
                 HStack{
                     //TODO: Animation Spawn
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     Text(Constants.Stories.chapter3Begin1)
                         .multilineTextAlignment(.center)
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 44 : 20, relativeTo: .largeTitle))
+                        .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
                         .foregroundStyle(Color.LG_1)
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                 }
                 Spacer()
                     .frame(height: 30)
                 
                 HStack{
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     Text(Constants.Stories.chapter3Begin2)
                         .multilineTextAlignment(.center)
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 44 : 20, relativeTo: .largeTitle))
+                        .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
                         .foregroundStyle(Color.LG_1)
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                 }
                 
                 Spacer()
@@ -43,13 +45,13 @@ struct HearingLevelEndedStory: View {
                 
                 HStack{
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     Text(Constants.Stories.chapter3Begin3)
                         .multilineTextAlignment(.center)
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 44 : 20, relativeTo: .largeTitle))
+                        .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
                         .foregroundStyle(Color.LG_1)
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                 }
                 Spacer()
                     .frame(height: 30)

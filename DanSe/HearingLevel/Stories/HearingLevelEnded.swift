@@ -42,8 +42,8 @@ struct HearingLevelEnded: View {
             
             Image("ear")
                 .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: Constants.currentDevice == .pad ? 600 : 100, height: Constants.currentDevice == .pad ? 200 : 100)
+                .aspectRatio(contentMode: Constants.currentDevice == .pad ? .fit : .fill)
+                .frame(width: Constants.currentDevice == .pad ? 600 : 100, height: Constants.currentDevice == .pad ? 400 : 100)
             
             if (Constants.currentDevice == .phone){
                 Spacer()

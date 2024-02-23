@@ -351,7 +351,7 @@ struct SpeechLevelView : View {
             
         })
         .navigationDestination(isPresented: $moveToNextScene, destination: {
-            EndingStory()
+            PreEndingStory()
         })
         .navigationBarBackButtonHidden()
     }

@@ -51,6 +51,8 @@
 		D7C0B3632B865D1800F81A3A /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7C0B3622B865D1800F81A3A /* correct.mp3 */; };
 		D7C0B3672B88992200F81A3A /* WrongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B3662B88992200F81A3A /* WrongView.swift */; };
 		D7C0B3692B889E2900F81A3A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7C0B3682B889E2900F81A3A /* wrong.mp3 */; };
+		D7C0B36B2B88B64200F81A3A /* PreEndingStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B36A2B88B64200F81A3A /* PreEndingStory.swift */; };
+		D7C0B36D2B88C8A000F81A3A /* EndingStory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B36C2B88C8A000F81A3A /* EndingStory2.swift */; };
 		D7DF3A212B7911EC00940264 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A202B7911EC00940264 /* PlayButton.swift */; };
 		D7DF3A2B2B79D35600940264 /* CrimsonText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A242B79D35600940264 /* CrimsonText-SemiBold.ttf */; };
 		D7DF3A2C2B79D35600940264 /* CrimsonText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A252B79D35600940264 /* CrimsonText-Bold.ttf */; };
@@ -115,6 +117,8 @@
 		D7C0B3622B865D1800F81A3A /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
 		D7C0B3662B88992200F81A3A /* WrongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongView.swift; sourceTree = "<group>"; };
 		D7C0B3682B889E2900F81A3A /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		D7C0B36A2B88B64200F81A3A /* PreEndingStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreEndingStory.swift; sourceTree = "<group>"; };
+		D7C0B36C2B88C8A000F81A3A /* EndingStory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingStory2.swift; sourceTree = "<group>"; };
 		D7DF3A202B7911EC00940264 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		D7DF3A242B79D35600940264 /* CrimsonText-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-SemiBold.ttf"; sourceTree = "<group>"; };
 		D7DF3A252B79D35600940264 /* CrimsonText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-Bold.ttf"; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 				D765D6FB2B6B395300B809A8 /* TouchLevelEndedStory.swift */,
 				D765D6FD2B6B396F00B809A8 /* HearingLevelEndedStory.swift */,
 				D765D7012B6B399A00B809A8 /* EndingStory.swift */,
+				D7C0B36C2B88C8A000F81A3A /* EndingStory2.swift */,
+				D7C0B36A2B88B64200F81A3A /* PreEndingStory.swift */,
 			);
 			path = StoryViews;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 				D7DF3A212B7911EC00940264 /* PlayButton.swift in Sources */,
 				D765D6FE2B6B396F00B809A8 /* HearingLevelEndedStory.swift in Sources */,
 				D7B5DEB32B67A97E000F5642 /* Instruments.swift in Sources */,
+				D7C0B36B2B88B64200F81A3A /* PreEndingStory.swift in Sources */,
 				D765D7062B6B4E3000B809A8 /* HearingLevelView.swift in Sources */,
 				D7B5DEDC2B680BE5000F5642 /* HearingLevel + HitTesting.swift in Sources */,
 				D7B5DEDA2B680B85000F5642 /* HearingLevel + ARSCNViewDelegate.swift in Sources */,
@@ -452,6 +459,7 @@
 				D765D7082B6B5C9900B809A8 /* HearingLevel + UpdateDelegate.swift in Sources */,
 				D76D55872B66287A0080192D /* HearingLevel.swift in Sources */,
 				D765D7002B6B398700B809A8 /* SpeechLevelEnded.swift in Sources */,
+				D7C0B36D2B88C8A000F81A3A /* EndingStory2.swift in Sources */,
 				D765D7042B6B3EEF00B809A8 /* TouchLevelEndingView.swift in Sources */,
 				D7C0B3672B88992200F81A3A /* WrongView.swift in Sources */,
 				D76D55912B6655290080192D /* TouchLevelView.swift in Sources */,

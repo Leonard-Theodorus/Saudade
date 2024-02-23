@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BeginningStory: View {
+    
+    let fontSize : CGFloat = Constants.currentDevice == .pad ? 36 : 17
+    let spacing : CGFloat = Constants.currentDevice == .pad ? 20 : 10
     var body: some View {
         ZStack {
             Color.black
@@ -15,13 +18,13 @@ struct BeginningStory: View {
             VStack {
                 HStack(alignment: .center){
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     Text(Constants.Stories.beginning1)
                         .multilineTextAlignment(.center)
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 36 : 20, relativeTo: .title3))
+                        .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .title3))
                         .foregroundStyle(Color.LG_1)
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                 }
                 
                 Spacer()
@@ -29,13 +32,13 @@ struct BeginningStory: View {
                 
                 HStack(alignment: .center){
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     Text(Constants.Stories.beginning2)
                         .multilineTextAlignment(.center)
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 36 : 20, relativeTo: .title3))
+                        .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .title3))
                         .foregroundStyle(Color.LG_1)
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     
                 }
                 Spacer()
@@ -43,13 +46,13 @@ struct BeginningStory: View {
                 
                 HStack(alignment: .center){
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     Text(Constants.Stories.beginning3)
                         .multilineTextAlignment(.center)
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 36 : 20, relativeTo: .title3))
+                        .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .title3))
                         .foregroundStyle(Color.LG_1)
                     Spacer()
-                        .frame(width: Constants.currentDevice == .pad ? 50 : 30)
+                        .frame(width: spacing)
                     
                 }
                 

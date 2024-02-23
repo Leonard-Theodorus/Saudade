@@ -39,7 +39,7 @@ struct TouchLevelBeginning: View {
             .fullScreenCover(isPresented: $showTutorial, onDismiss: {
                 moveToNextScene = true
             }, content: {
-                TouchLevelTutorial(showTutorial: $showTutorial)
+                TouchLevelTutorial()
             })
             .navigationDestination(isPresented: $moveToNextScene) {
                 TouchLevelView()

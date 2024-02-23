@@ -38,5 +38,5 @@ struct HearingLevelView: View {
 }
 
 #Preview {
-    HearingLevelView(levelPassed: true)
+    HearingLevelView(levelPassed: false)
 }

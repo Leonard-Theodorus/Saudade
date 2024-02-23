@@ -30,7 +30,7 @@ struct MainMenu : View {
                         .frame(height: Constants.currentDevice == .pad ? 0 : 20)
                 }
             }
-            
+            .navigationBarBackButtonHidden()
             .ignoresSafeArea(.all)
         }
     }
