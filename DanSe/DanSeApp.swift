@@ -10,13 +10,9 @@ import SwiftUI
 @main
 struct DanSeApp: App {
     var body: some Scene {
-        //TODO: Add Animation (typewriter + yang lain) di story
         //TODO: Add music pas mau story level 3
         WindowGroup {
-            NavigationStack{
-                PreEndingStory()
-            }
-//            MainMenu()
+            MainMenu()
         }
     }
 }

@@ -46,6 +46,9 @@ struct TouchLevelView : View {
                 }
                 .store(in: &touchLevelHelper.garbage)
         }
+        .onDisappear{
+            levelPassed = false
+        }
     }
 }
 

@@ -53,6 +53,10 @@
 		D7C0B3692B889E2900F81A3A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7C0B3682B889E2900F81A3A /* wrong.mp3 */; };
 		D7C0B36B2B88B64200F81A3A /* PreEndingStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B36A2B88B64200F81A3A /* PreEndingStory.swift */; };
 		D7C0B36D2B88C8A000F81A3A /* EndingStory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B36C2B88C8A000F81A3A /* EndingStory2.swift */; };
+		D7C0B3702B88F45900F81A3A /* TypeWriterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B36F2B88F45900F81A3A /* TypeWriterSettings.swift */; };
+		D7C0B3722B88F52200F81A3A /* TypeWriterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B3712B88F52200F81A3A /* TypeWriterModifier.swift */; };
+		D7C0B3742B88F69A00F81A3A /* TypeWriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B3732B88F69A00F81A3A /* TypeWriterView.swift */; };
+		D7C0B3762B891B2200F81A3A /* HearingLevelCameraPrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0B3752B891B2200F81A3A /* HearingLevelCameraPrivacy.swift */; };
 		D7DF3A212B7911EC00940264 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A202B7911EC00940264 /* PlayButton.swift */; };
 		D7DF3A2B2B79D35600940264 /* CrimsonText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A242B79D35600940264 /* CrimsonText-SemiBold.ttf */; };
 		D7DF3A2C2B79D35600940264 /* CrimsonText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A252B79D35600940264 /* CrimsonText-Bold.ttf */; };
@@ -119,6 +123,10 @@
 		D7C0B3682B889E2900F81A3A /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		D7C0B36A2B88B64200F81A3A /* PreEndingStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreEndingStory.swift; sourceTree = "<group>"; };
 		D7C0B36C2B88C8A000F81A3A /* EndingStory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingStory2.swift; sourceTree = "<group>"; };
+		D7C0B36F2B88F45900F81A3A /* TypeWriterSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWriterSettings.swift; sourceTree = "<group>"; };
+		D7C0B3712B88F52200F81A3A /* TypeWriterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWriterModifier.swift; sourceTree = "<group>"; };
+		D7C0B3732B88F69A00F81A3A /* TypeWriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWriterView.swift; sourceTree = "<group>"; };
+		D7C0B3752B891B2200F81A3A /* HearingLevelCameraPrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelCameraPrivacy.swift; sourceTree = "<group>"; };
 		D7DF3A202B7911EC00940264 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		D7DF3A242B79D35600940264 /* CrimsonText-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-SemiBold.ttf"; sourceTree = "<group>"; };
 		D7DF3A252B79D35600940264 /* CrimsonText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-Bold.ttf"; sourceTree = "<group>"; };
@@ -215,6 +223,7 @@
 		D78A1D932B65236D00B4E435 /* DanSe */ = {
 			isa = PBXGroup;
 			children = (
+				D7C0B36E2B88F44A00F81A3A /* TypewriterModifier */,
 				D7DF3A3B2B79D3F400940264 /* Info.plist */,
 				D7DF3A222B79D33900940264 /* Fonts */,
 				D765D6F82B6B392600B809A8 /* StoryViews */,
@@ -261,6 +270,7 @@
 				D7B5DED92B680B85000F5642 /* HearingLevel + ARSCNViewDelegate.swift */,
 				D7B5DED52B67E5B5000F5642 /* HearingLevelViewRepresentable.swift */,
 				D765D7052B6B4E3000B809A8 /* HearingLevelView.swift */,
+				D7C0B3752B891B2200F81A3A /* HearingLevelCameraPrivacy.swift */,
 				D7B5DEDB2B680BE5000F5642 /* HearingLevel + HitTesting.swift */,
 				D765D7072B6B5C9900B809A8 /* HearingLevel + UpdateDelegate.swift */,
 				D7B5DEDF2B681486000F5642 /* Components */,
@@ -292,6 +302,16 @@
 				D7C0313A2B695B1B00466529 /* Target.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D7C0B36E2B88F44A00F81A3A /* TypewriterModifier */ = {
+			isa = PBXGroup;
+			children = (
+				D7C0B36F2B88F45900F81A3A /* TypeWriterSettings.swift */,
+				D7C0B3712B88F52200F81A3A /* TypeWriterModifier.swift */,
+				D7C0B3732B88F69A00F81A3A /* TypeWriterView.swift */,
+			);
+			path = TypewriterModifier;
 			sourceTree = "<group>";
 		};
 		D7DF3A1F2B7911DA00940264 /* MainMenu */ = {
@@ -449,7 +469,10 @@
 				D7B5DED22B67CAD8000F5642 /* TouchLevelHelper.swift in Sources */,
 				D7DF3A212B7911EC00940264 /* PlayButton.swift in Sources */,
 				D765D6FE2B6B396F00B809A8 /* HearingLevelEndedStory.swift in Sources */,
+				D7C0B3762B891B2200F81A3A /* HearingLevelCameraPrivacy.swift in Sources */,
+				D7C0B3702B88F45900F81A3A /* TypeWriterSettings.swift in Sources */,
 				D7B5DEB32B67A97E000F5642 /* Instruments.swift in Sources */,
+				D7C0B3742B88F69A00F81A3A /* TypeWriterView.swift in Sources */,
 				D7C0B36B2B88B64200F81A3A /* PreEndingStory.swift in Sources */,
 				D765D7062B6B4E3000B809A8 /* HearingLevelView.swift in Sources */,
 				D7B5DEDC2B680BE5000F5642 /* HearingLevel + HitTesting.swift in Sources */,
@@ -481,6 +504,7 @@
 				D7DF3A3D2B7A17E800940264 /* TouchLevelBeginning.swift in Sources */,
 				D70F974A2B861442005C33E0 /* RepeatButton.swift in Sources */,
 				D78A1D952B65236D00B4E435 /* DanSeApp.swift in Sources */,
+				D7C0B3722B88F52200F81A3A /* TypeWriterModifier.swift in Sources */,
 				D7B5DEDE2B68140A000F5642 /* Crosshair.swift in Sources */,
 				D765D6FC2B6B395300B809A8 /* TouchLevelEndedStory.swift in Sources */,
 				D765D70A2B6B601A00B809A8 /* HearingLevelEnded.swift in Sources */,
@@ -622,7 +646,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DanSe/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "In order to complete this quest, DanSe needs to track your face";
+				INFOPLIST_KEY_NSCameraUsageDescription = "In order to complete this quest, it needs to track your face.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -653,7 +677,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DanSe/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "In order to complete this quest, DanSe needs to track your face";
+				INFOPLIST_KEY_NSCameraUsageDescription = "In order to complete this quest, it needs to track your face.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

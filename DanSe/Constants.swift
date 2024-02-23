@@ -75,8 +75,8 @@ struct Constants{
         static let preEndingStory6 : String = "Why are those the only things that I can remember?"
         
         static let endingStory1 : String = "We as humans, share the same nature. A lot of times we are affected by our greed, that feeling of constantly wanting more and never content."
-        static let endingStory2 : String = "That is what happened when all we focus on is the end result and what we can achieve in our life."
-        static let endingStory3 : String = "Instead of focusing on the end result, why don’t we savor every part of our journey to achieve that result?"
+        static let endingStory2 : String = "That is what happened when we only focus on he end result and what we can achieve."
+        static let endingStory3 : String = "Instead of only focusing on the end result, why don’t we savor every part of our journey in achieving that result?"
         static let endingStory4 : String = "Every part of a journey is unique, and surely it won’t happen twice in our life, once a moment is passed, we will never experience it again. It lives on our memory."
         static let endingStory5 : String = "We are only given one chance to live, one chance to write our own story. While we still got the chance, why don’t we write something interesting?"
         static let endingStory6 : String = "Always remember, “it’s never about the destination, it’s the journey.”"

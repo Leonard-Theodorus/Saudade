@@ -12,6 +12,8 @@ struct HearingLevelView: View {
     
     @State var moveToNextScene : Bool = false
     
+    @State var presentSheet : Bool = false
+    
     var body: some View {
         ZStack{
             Color.white1
@@ -33,6 +35,15 @@ struct HearingLevelView: View {
                     })
             }
         }
+        .onAppear{
+            presentSheet = true
+        }
+        .fullScreenCover(isPresented: $presentSheet, content: {
+            HearingLevelCameraPrivacy()
+                .presentationBackground {
+                    Color.white.opacity(0.8)
+                }
+        })
         
     }
 }
