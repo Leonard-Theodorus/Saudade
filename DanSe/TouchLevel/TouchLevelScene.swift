@@ -48,21 +48,17 @@ final class TouchLevelScene: SKScene {
         }
     }
     
-    @objc func nodeTapped(){
-        print("Tapped")
-    }
-    
     func generateRandomNode(){
         radius = UIDevice.current.userInterfaceIdiom == .pad ? 250 : 100
-        let xRange : SKRange = SKRange(lowerLimit: -((size.width / 2)) + radius, upperLimit: (size.width / 2) - radius)
-        let yRange : SKRange = SKRange(lowerLimit: -((size.height / 2)) + radius, upperLimit: (size.height / 2) - radius)
-        
+        let xRange : SKRange = SKRange(lowerLimit: 0 + radius, upperLimit: (size.width) - radius)
+        let yRange : SKRange = SKRange(lowerLimit: 0 + radius, upperLimit: (size.height) - radius)
         
         let randomX = CGFloat.random(in: xRange.lowerLimit ..< xRange.upperLimit)
         let randomY = CGFloat.random(in: yRange.lowerLimit ..< yRange.upperLimit)
         
         let randomNode : SKNode = SKNode()
         randomNode.position = CGPoint(x: randomX, y: randomY)
+        print(randomNode.position)
         
         let object = SKShapeNode(circleOfRadius: radius)
         object.fillColor = .black

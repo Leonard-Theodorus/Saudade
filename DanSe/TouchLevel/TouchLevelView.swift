@@ -35,7 +35,7 @@ struct TouchLevelView : View {
             TouchLevelEndedStory()
         })
         .onAppear{
-            var scene = TouchLevelScene(size: CGSize(width: 700, height: 1000))
+            let scene = TouchLevelScene(size: CGSize(width: Constants.frameWidth, height: Constants.frameHeight))
             gameScene = scene
             touchLevelHelper.$levelPassed.receive(on: DispatchQueue.main)
                 .sink { completed in
