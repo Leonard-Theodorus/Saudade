@@ -32,7 +32,7 @@ struct HearingLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
                             }
@@ -66,7 +66,7 @@ struct HearingLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
                             }
@@ -101,57 +101,19 @@ struct HearingLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
+                                currentTypingIndex += 1
                             }
                         })
                     }
                 }
+                
                 Spacer()
                     .frame(height: 30)
-                
-                if(nextIdx == 2 && showNext[nextIdx]){
-                    Text("Continue")
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 50 : 36, relativeTo: .title3))
-                        .foregroundStyle(Color.lBlue1)
-                        .onTapGesture {
-                            withAnimation(.easeInOut(duration: 0.5)) {
-                                showNext[nextIdx] = false
-                                nextIdx += 1
-                                currentTypingIndex += 1
-                            }
-                        }
-                }
                 
                 if (currentTypingIndex >= 3){
-                    
-                    HStack{
-                        //TODO: Animation Spawn
-                        Spacer()
-                            .frame(width: spacing)
-                        Text(Constants.Instructions.chapter2FourthInstruction)
-                            .multilineTextAlignment(.center)
-                        //TODO: Pisahin goodluck
-                            .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
-                            .foregroundStyle(Color.LG_1)
-                        Spacer()
-                            .frame(width: spacing)
-                    }
-                    .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
-                            withAnimation(.easeInOut(duration: 0.8)) {
-                                showNext[nextIdx] = true
-                                currentTypingIndex += 1
-                            }
-                        })
-                    }
-                }
-                
-                Spacer()
-                    .frame(height: 30)
-                
-                if (currentTypingIndex >= 4){
                     
                     HStack{
                         Text(Constants.goodLuck)

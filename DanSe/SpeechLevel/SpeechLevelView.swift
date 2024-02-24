@@ -301,8 +301,10 @@ struct SpeechLevelView : View {
                     HStack{
                         Spacer()
                         VStack{
-                            Spacer()
-                                .frame(height: 70)
+                            if (Constants.currentDevice == .phone){
+                                Spacer()
+                                    .frame(height: 70)
+                            }
                             Button {
                                 repeatVisible = false
                                 for i in 0 ..< 3{
@@ -319,6 +321,10 @@ struct SpeechLevelView : View {
                                     .tint(Color.black1)
                             }
                             Spacer()
+                        }
+                        if (Constants.currentDevice == .pad){
+                            Spacer()
+                                .frame(width: 20)
                         }
                     }
                 }
@@ -357,5 +363,5 @@ struct SpeechLevelView : View {
     }
 }
 #Preview {
-    SpeechLevelView(levelDone: true)
+    SpeechLevelView(repeatVisible : true, levelDone: false)
 }

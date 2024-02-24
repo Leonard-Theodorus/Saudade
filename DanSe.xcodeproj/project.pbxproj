@@ -13,6 +13,7 @@
 		D72878672B6C08CD006F3560 /* beat3-140-BPM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D72878652B6C08CD006F3560 /* beat3-140-BPM.mp3 */; };
 		D72878692B6C08DA006F3560 /* beat-1-120-bpm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D72878682B6C08DA006F3560 /* beat-1-120-bpm.mp3 */; };
 		D728786C2B6C0926006F3560 /* snare2-edited.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D728786B2B6C0926006F3560 /* snare2-edited.mp3 */; };
+		D74AB21A2B8A71230038AA75 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74AB2192B8A71230038AA75 /* Colors.swift */; };
 		D765D6FA2B6B393500B809A8 /* BeginningStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D6F92B6B393500B809A8 /* BeginningStory.swift */; };
 		D765D6FC2B6B395300B809A8 /* TouchLevelEndedStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D6FB2B6B395300B809A8 /* TouchLevelEndedStory.swift */; };
 		D765D6FE2B6B396F00B809A8 /* HearingLevelEndedStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765D6FD2B6B396F00B809A8 /* HearingLevelEndedStory.swift */; };
@@ -82,6 +83,7 @@
 		D72878652B6C08CD006F3560 /* beat3-140-BPM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beat3-140-BPM.mp3"; sourceTree = "<group>"; };
 		D72878682B6C08DA006F3560 /* beat-1-120-bpm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beat-1-120-bpm.mp3"; sourceTree = "<group>"; };
 		D728786B2B6C0926006F3560 /* snare2-edited.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "snare2-edited.mp3"; sourceTree = "<group>"; };
+		D74AB2192B8A71230038AA75 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D765D6F92B6B393500B809A8 /* BeginningStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningStory.swift; sourceTree = "<group>"; };
 		D765D6FB2B6B395300B809A8 /* TouchLevelEndedStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelEndedStory.swift; sourceTree = "<group>"; };
 		D765D6FD2B6B396F00B809A8 /* HearingLevelEndedStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevelEndedStory.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				D78A1D9A2B65236E00B4E435 /* Preview Content */,
 				D7C031352B69078100466529 /* Constants.swift */,
 				D7C031382B691C4600466529 /* Utils.swift */,
+				D74AB2192B8A71230038AA75 /* Colors.swift */,
 			);
 			path = DanSe;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B5DED22B67CAD8000F5642 /* TouchLevelHelper.swift in Sources */,
+				D74AB21A2B8A71230038AA75 /* Colors.swift in Sources */,
 				D7DF3A212B7911EC00940264 /* PlayButton.swift in Sources */,
 				D765D6FE2B6B396F00B809A8 /* HearingLevelEndedStory.swift in Sources */,
 				D7C0B3762B891B2200F81A3A /* HearingLevelCameraPrivacy.swift in Sources */,

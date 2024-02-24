@@ -32,7 +32,7 @@ struct BeginningStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -70,7 +70,7 @@ struct BeginningStory: View {
                         
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -93,7 +93,7 @@ struct BeginningStory: View {
                         }
                 }
                 
-                if (currentTypingIndex >= 2){
+                if (currentTypingIndex == 2){
                     
                     HStack(alignment: .center){
                         Spacer()
@@ -107,10 +107,9 @@ struct BeginningStory: View {
                         
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
-                                currentTypingIndex += 1
                             }
                         })
                     }
@@ -119,7 +118,45 @@ struct BeginningStory: View {
                 Spacer()
                     .frame(height: 20)
                 
-                if (currentTypingIndex == 3){
+                if (showNextIndex == 2 && showNext[showNextIndex]){
+                    Text("Continue Story")
+                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 50 : 36, relativeTo: .title3))
+                        .foregroundStyle(Color.lBlue1)
+                        .onTapGesture {
+                            withAnimation(.easeInOut(duration: 0.5)) {
+                                showNext[showNextIndex] = false
+                                showNextIndex += 1
+                                currentTypingIndex += 1
+                            }
+                        }
+                }
+                
+                if (currentTypingIndex >= 3){
+                    
+                    HStack(alignment: .center){
+                        Spacer()
+                            .frame(width: spacing)
+                        Text(Constants.Stories.beginning4)
+                            .multilineTextAlignment(.center)
+                            .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .title3))
+                            .foregroundStyle(Color.LG_1)
+                        Spacer()
+                            .frame(width: spacing)
+                        
+                    }
+                    .onAppear{
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                            withAnimation(.easeInOut(duration: 0.8)) {
+                                showNext[showNextIndex] = true
+                                currentTypingIndex += 1
+                            }
+                        })
+                    }
+                }
+                Spacer()
+                    .frame(height: spacing)
+                
+                if (currentTypingIndex >= 4){
                     NavigationLink {
                         TouchLevelBeginning()
                     } label: {

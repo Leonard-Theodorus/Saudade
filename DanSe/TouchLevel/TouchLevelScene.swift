@@ -53,7 +53,7 @@ final class TouchLevelScene: SKScene {
     }
     
     func generateRandomNode(){
-        radius = UIDevice.current.userInterfaceIdiom == .pad ? 250 : 50
+        radius = UIDevice.current.userInterfaceIdiom == .pad ? 250 : 100
         let xRange : SKRange = SKRange(lowerLimit: -((size.width / 2)) + radius, upperLimit: (size.width / 2) - radius)
         let yRange : SKRange = SKRange(lowerLimit: -((size.height / 2)) + radius, upperLimit: (size.height / 2) - radius)
         
@@ -65,9 +65,8 @@ final class TouchLevelScene: SKScene {
         randomNode.position = CGPoint(x: randomX, y: randomY)
         
         let object = SKShapeNode(circleOfRadius: radius)
-        //TODO: Resize Shape + Range benernya buat IPAD
         object.fillColor = .black
-//        object.strokeColor = .black
+        object.strokeColor = .black
         randomNode.addChild(object)
         
         addChild(randomNode)

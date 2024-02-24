@@ -48,11 +48,11 @@ extension HearingLevel {
                 let xHit : Bool = self.checkForHit(in: ((currentTargetCoordinate.x / 2) - self.targetWidth) ... ((currentTargetCoordinate.x / 2) + self.targetWidth) , point: point.x)
                 let yHit : Bool = self.checkForHit(in: ((currentTargetCoordinate.y / 2) - self.targetHeight) ... ((currentTargetCoordinate.y / 2) + self.targetHeight) , point: point.y)
                 
-                if((xHit && yHit) && self.gameScore < 4){
+                if((xHit && yHit) && self.gameScore < 2){
                     self.gameScore += 1
                     self.randomizeTargetPosition()
                 }
-                else if(self.gameScore == 3){
+                if(self.gameScore == 1){
                     self.sceneView.session.pause()
                     self.sceneView.removeFromSuperview()
                     self.delegate?.updateScore(completed: true)

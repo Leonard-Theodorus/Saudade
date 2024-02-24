@@ -14,15 +14,6 @@ struct HearingLevelCameraPrivacy: View {
     var body: some View {
         VStack{
             HStack{
-                Text("In order to complete this level, the device needs to track your eye movement by enabling face tracking.")
-                    .font(.custom(Constants.contentFontName, size: fontSize))
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(.black1)
-            }
-            Spacer()
-                .frame(height: spacing)
-            
-            HStack{
                 Text("Place or hold the device approximately 2 meters from your face for best accuracy.")
                     .font(.custom(Constants.contentFontName, size: fontSize))
                     .multilineTextAlignment(.center)
@@ -32,7 +23,7 @@ struct HearingLevelCameraPrivacy: View {
                 .frame(height: spacing)
             
             HStack{
-                Text("Please allow camera usage to enable face tracking when prompted.")
+                Text("You can use combinations of eye movement and facial movement to move the crosshair.")
                     .font(.custom(Constants.contentFontName, size: fontSize))
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.black1)

@@ -30,7 +30,7 @@ struct HearingLevelEndedStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -64,7 +64,7 @@ struct HearingLevelEndedStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -100,7 +100,7 @@ struct HearingLevelEndedStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                                 currentTypingIndex += 1

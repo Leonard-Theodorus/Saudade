@@ -33,7 +33,7 @@ struct SpeechLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
                             }
@@ -68,7 +68,7 @@ struct SpeechLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
                             }
@@ -103,7 +103,7 @@ struct SpeechLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
                             }
@@ -139,7 +139,7 @@ struct SpeechLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
                             }
@@ -172,7 +172,7 @@ struct SpeechLevelTutorial: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[nextIdx] = true
                                 currentTypingIndex += 1

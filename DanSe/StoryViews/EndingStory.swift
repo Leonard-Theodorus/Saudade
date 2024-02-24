@@ -20,7 +20,6 @@ struct EndingStory: View {
             VStack {
                 if (currentTypingIndex == 0){
                     HStack{
-                        //TODO: Animation Spawn
                         Spacer()
                             .frame(width: spacing)
                         Text(Constants.EndingStories.endingStory1)
@@ -31,7 +30,7 @@ struct EndingStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -65,7 +64,7 @@ struct EndingStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -100,7 +99,7 @@ struct EndingStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -136,7 +135,7 @@ struct EndingStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                                 currentTypingIndex += 1

@@ -10,7 +10,7 @@ import SwiftUI
 struct EndingStory2: View {
     let fontSize : CGFloat = Constants.currentDevice == .pad ? 36 : 17
     let spacing : CGFloat = Constants.currentDevice == .pad ? 20 : 10
-    let settings = TypeWriterSettings(typingSpeed: 0.08)
+    let settings = TypeWriterSettings(typingSpeed: 0.05)
     @Environment(\.dismiss) var dismiss
     @State var showNext : [Bool] = Array(repeating: false, count: 7)
     @State var showNextIndex : Int = 0
@@ -32,7 +32,7 @@ struct EndingStory2: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -88,7 +88,7 @@ struct EndingStory2: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                                 currentTypingIndex += 1
