@@ -26,7 +26,6 @@
 		D76D55872B66287A0080192D /* HearingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D55862B66287A0080192D /* HearingLevel.swift */; };
 		D76D55912B6655290080192D /* TouchLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D55902B6655290080192D /* TouchLevelView.swift */; };
 		D76D55932B665F380080192D /* TouchLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D55922B665F380080192D /* TouchLevelScene.swift */; };
-		D76D55972B668D5E0080192D /* TouchLevelScn.sks in Resources */ = {isa = PBXBuildFile; fileRef = D76D55962B668D5E0080192D /* TouchLevelScn.sks */; };
 		D76D55992B66BCC50080192D /* vibrate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76D55982B66BCC50080192D /* vibrate.mp3 */; };
 		D78833A22B836B6600ED4795 /* SpeechLevelBeginning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78833A12B836B6600ED4795 /* SpeechLevelBeginning.swift */; };
 		D78833A42B836BE700ED4795 /* SpeechLevelTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78833A32B836BE700ED4795 /* SpeechLevelTutorial.swift */; };
@@ -96,7 +95,6 @@
 		D76D55862B66287A0080192D /* HearingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearingLevel.swift; sourceTree = "<group>"; };
 		D76D55902B6655290080192D /* TouchLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelView.swift; sourceTree = "<group>"; };
 		D76D55922B665F380080192D /* TouchLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLevelScene.swift; sourceTree = "<group>"; };
-		D76D55962B668D5E0080192D /* TouchLevelScn.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TouchLevelScn.sks; sourceTree = "<group>"; };
 		D76D55982B66BCC50080192D /* vibrate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vibrate.mp3; sourceTree = "<group>"; };
 		D78833A12B836B6600ED4795 /* SpeechLevelBeginning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechLevelBeginning.swift; sourceTree = "<group>"; };
 		D78833A32B836BE700ED4795 /* SpeechLevelTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechLevelTutorial.swift; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 				D7DF3A412B7B4D5100940264 /* Stories */,
 				D76D55902B6655290080192D /* TouchLevelView.swift */,
 				D76D55922B665F380080192D /* TouchLevelScene.swift */,
-				D76D55962B668D5E0080192D /* TouchLevelScn.sks */,
 				D7B5DECF2B67C868000F5642 /* vibrate-edited.mp3 */,
 				D76D55982B66BCC50080192D /* vibrate.mp3 */,
 				D7B5DED12B67CAD8000F5642 /* TouchLevelHelper.swift */,
@@ -442,7 +439,6 @@
 				D7C0B3692B889E2900F81A3A /* wrong.mp3 in Resources */,
 				D7B5DED02B67C868000F5642 /* vibrate-edited.mp3 in Resources */,
 				D72878672B6C08CD006F3560 /* beat3-140-BPM.mp3 in Resources */,
-				D76D55972B668D5E0080192D /* TouchLevelScn.sks in Resources */,
 				D7B5DEC72B67C2E9000F5642 /* snare1-edited.mp3 in Resources */,
 				D72878662B6C08CD006F3560 /* beat2-140-BPM.mp3 in Resources */,
 				D728786C2B6C0926006F3560 /* snare2-edited.mp3 in Resources */,
@@ -663,6 +659,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LT.Ex1.DanSe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -694,6 +693,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LT.Ex1.DanSe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

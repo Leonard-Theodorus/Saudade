@@ -35,9 +35,8 @@ struct TouchLevelView : View {
             TouchLevelEndedStory()
         })
         .onAppear{
-            if let scene = SKScene(fileNamed: "TouchLevelScn"){
-                gameScene = scene
-            }
+            var scene = TouchLevelScene(size: CGSize(width: 700, height: 1000))
+            gameScene = scene
             touchLevelHelper.$levelPassed.receive(on: DispatchQueue.main)
                 .sink { completed in
                     if(completed){
