@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct HearingLevelEndedStory: View {
     let fontSize : CGFloat = Constants.currentDevice == .pad ? 36 : 17
@@ -13,6 +14,8 @@ struct HearingLevelEndedStory: View {
     @State var showNext : [Bool] = Array(repeating: false, count: 4)
     @State var showNextIndex : Int = 0
     @State var currentTypingIndex : Int = -1
+    var beatURL : URL? = Bundle.main.url(forResource: "beat3-140-BPM", withExtension: "mp3")
+    @State var beatPlayer : AVAudioPlayer!
     var body: some View {
         ZStack{
             Color.black
@@ -64,6 +67,9 @@ struct HearingLevelEndedStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                            beatPlayer.play()
+                        })
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
@@ -126,9 +132,23 @@ struct HearingLevelEndedStory: View {
             .navigationBarBackButtonHidden()
         }
         .onAppear(perform: {
+            do{
+                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setActive(true)
+                guard let beatURL else {return}
+                beatPlayer = try AVAudioPlayer(contentsOf: beatURL, fileTypeHint: AVFileType.mp3.rawValue)
+                beatPlayer.numberOfLoops = -1
+                beatPlayer.volume = 0.7
+            }
+            catch{
+                print(error.localizedDescription)
+            }
             withAnimation(.easeInOut(duration: 0.8)) {
                 currentTypingIndex += 1
             }
+        })
+        .onDisappear(perform: {
+            beatPlayer.stop()
         })
     }
 }

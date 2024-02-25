@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct EndingStory: View {
     let fontSize : CGFloat = Constants.currentDevice == .pad ? 36 : 17
@@ -13,6 +14,7 @@ struct EndingStory: View {
     @State var showNext : [Bool] = Array(repeating: false, count: 7)
     @State var showNextIndex : Int = 0
     @State var currentTypingIndex : Int = -1
+    @Binding var player : AVAudioPlayer!
     var body: some View {
         ZStack{
             Color.black
@@ -135,7 +137,7 @@ struct EndingStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                                 currentTypingIndex += 1
@@ -150,7 +152,7 @@ struct EndingStory: View {
                 if (currentTypingIndex >= 4){
                     
                     NavigationLink {
-                        EndingStory2()
+                        EndingStory2(player: $player)
                     } label: {
                         Text(Constants.continueJourney)
                             .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 44 : 30, relativeTo: .title3))
@@ -169,6 +171,6 @@ struct EndingStory: View {
     }
 }
 
-#Preview {
-    EndingStory()
-}
+//#Preview {
+//    EndingStory()
+//}

@@ -58,7 +58,7 @@ struct Constants{
         
         static let chapter3Begin1 : String = "As the gift of hearing is restored, I embark on my next journey. Now, there is only one thing that is left. I have to regain my ability to speak."
         
-        static let chapter3Begin2 : String = "Suddenly a strange but familiar melodies present itself before me, getting louder and louder by the second."
+        static let chapter3Begin2 : String = "Suddenly a strange but familiar melodies present itself before me."
         
         static let chapter3Begin3 : String = "As I walk further, I came across three odd looking rocks. I realize that it plays a certain sound when I tapped it, each of them produces different ones."
         
@@ -67,26 +67,24 @@ struct Constants{
     }
     
     struct EndingStories{
-        static let preEndingStory1 : String = "So this is how it feels to be a human, a strange yet familiar feeling."
-        static let preEndingStory2 : String = "But, what now? I tried all my best to regain my memories. I gave my all on this long and exhausting journey to regain all my senses."
-        static let preEndingStory3 : String = "Starting from scrawling all over the floor to find my eyes."
-        static let preEndingStory4 : String = "Following a random bird-looking figure everywhere to regain my ears and hearing."
-        static let preEndingStory5 : String = "Making strange music out of strange rocks, that regained my ability to speak. A bizarre experience to say the least."
-        static let preEndingStory6 : String = "Why are those the only things that I can remember?"
+        static let preEndingStory1 : String = "So, what now? I tried all my best to regain my memories. I gave my all on this long and exhausting journey to regain all my senses."
+        static let preEndingStory2 : String = "Starting from scrawling all over the floor to find my eyes."
+        static let preEndingStory3 : String = "Following a random bird-looking figure everywhere to regain my ears and hearing."
+        static let preEndingStory4 : String = "Making strange music out of strange rocks, that regained my ability to speak. A bizarre experience to say the least."
+        static let preEndingStory5 : String = "Why are those the only things that I can remember?"
         
-        static let endingStory1 : String = "We as humans, share the same nature. A lot of times we are affected by our greed, that feeling of constantly wanting more and never content."
+        static let endingStory1 : String = "We as humans, are affected by our greed. That feeling of constantly wanting more and never content."
         static let endingStory2 : String = "That is what happened when we only focus on the end result and what we can achieve."
         static let endingStory3 : String = "Instead of only focusing on the end result, why don’t we savor every part of our journey in achieving that result?"
-        static let endingStory4 : String = "Every part of a journey is unique, and surely it won’t happen twice in our life, once a moment is passed, we will never experience it again. It lives on our memory."
-        static let endingStory5 : String = "We are only given one chance to live, one chance to write our own story. While we still got the chance, why don’t we write something interesting?"
+        static let endingStory4 : String = "We are only given one chance to live, one chance to experience every moment. Once it's passed, it lives on our memory."
+        static let endingStory5 : String = "So, why don't we savor all of it, while we still got the chance?"
         static let endingStory6 : String = "Always remember, “it’s never about the destination, it’s the journey.”"
-        
         static let endingStory7 : String = "Thank you for being a part of this journey."
     }
     
     struct Instructions{
         static let chapter1FirstInstruction : String = "Somewhere in the visible screen, there is a hidden object lying around, your task is to find it and hopefully regain your sight."
-        static let chapter1SecondInstruction : String = "In order to do so, use your fingers to touch, drag, and feel all around the visible screen, the object wil vibrate when you encounter it."
+        static let chapter1SecondInstruction : String = "In order to do so, use your fingers to touch, drag, and feel all around the visible screen, the object will vibrate when you encounter it."
         static let chapter1ThirdInstruction : String = "To successfully retrieve it, tap the part of the screen where you feel that vibration."
         
         static let chapter2FirstInstruction : String = "You are tasked to follow the flying figure with your newly regained sight."
@@ -95,8 +93,7 @@ struct Constants{
         
         static let chapter3FirstInstruction : String = "You are tasked to mimic the melodies by using the three rocks accordingly."
         static let chapter3Extra1 : String = "Press the play button that is visible on the screen to play a melody."
-        static let chapter3SecondInstruction : String = "Each melodies will be played first, after that, you have to re-create it by tapping the three rocks accordingly so it is as similar as possible to the original."
-        static let chapter3ThirdInstruction : String = "Each melodies are considered succesfully mimicked, if you manage to play the rocks in the correct order."
+        static let chapter3SecondInstruction : String = "Each melodies will be played first, after that, you have to re-create it by tapping the three rocks in the correct order."
         static let chapter3FourthInstruction : String = "The task will be successful if you can mimic all of the melodies correctly"
     
     }

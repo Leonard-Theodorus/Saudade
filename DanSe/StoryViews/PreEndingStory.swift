@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct PreEndingStory: View {
     let fontSize : CGFloat = Constants.currentDevice == .pad ? 36 : 15
@@ -13,6 +14,8 @@ struct PreEndingStory: View {
     @State var showNext : [Bool] = Array(repeating: false, count: 7)
     @State var showNextIndex : Int = 0
     @State var currentTypingIndex : Int = -1
+    var fileURL : URL? = Bundle.main.url(forResource: "lifting", withExtension: "mp3")
+    @State var player : AVAudioPlayer!
     var body: some View {
         ZStack{
             Color.black
@@ -30,7 +33,7 @@ struct PreEndingStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -64,7 +67,7 @@ struct PreEndingStory: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -160,7 +163,7 @@ struct PreEndingStory: View {
                         }
                 }
                 
-                if (currentTypingIndex == 4){
+                if (currentTypingIndex >= 4){
                     HStack{
                         Spacer()
                             .frame(width: spacing)
@@ -184,47 +187,13 @@ struct PreEndingStory: View {
                 Spacer()
                     .frame(height: 30)
                 
-                if (showNextIndex == 4 && showNext[showNextIndex]){
-                    Text("Continue")
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 50 : 36, relativeTo: .title3))
-                        .foregroundStyle(Color.lBlue1)
-                        .onTapGesture {
-                            withAnimation(.easeInOut(duration: 0.5)) {
-                                showNext[showNextIndex] = false
-                                showNextIndex += 1
-                                currentTypingIndex += 1
-                            }
-                        }
-                }
-                
-                if (currentTypingIndex >= 5){
-                    
-                    HStack{
-                        Spacer()
-                            .frame(width: spacing)
-                        Text(Constants.EndingStories.preEndingStory6)
-                            .multilineTextAlignment(.center)
-                            .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
-                            .foregroundStyle(Color.LG_1)
-                        Spacer()
-                            .frame(width: spacing)
-                    }
-                    .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute: {
-                            withAnimation(.easeInOut(duration: 0.8)) {
-                                showNext[showNextIndex] = true
-                                currentTypingIndex += 1
-                            }
-                        })
-                    }
-                }
                 
                 Spacer()
                     .frame(height: 30)
-                if (currentTypingIndex >= 6){
+                if (currentTypingIndex >= 4){
                     
                     NavigationLink {
-                        EndingStory()
+                        EndingStory(player: $player)
                     } label: {
                         Text(Constants.continueJourney)
                             .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 44 : 36, relativeTo: .title3))
@@ -237,6 +206,18 @@ struct PreEndingStory: View {
             .navigationBarBackButtonHidden()
         }
         .onAppear{
+            do{
+                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setActive(true)
+                guard let fileURL else {return}
+                player = try AVAudioPlayer(contentsOf: fileURL, fileTypeHint: AVFileType.mp3.rawValue)
+                player.numberOfLoops = -1
+                player.volume = 0.8
+                player.play()
+            }
+            catch{
+                print(error.localizedDescription)
+            }
             withAnimation(.easeInOut(duration: 0.8)) {
                 currentTypingIndex += 1
             }

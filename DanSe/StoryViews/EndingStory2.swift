@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct EndingStory2: View {
     let fontSize : CGFloat = Constants.currentDevice == .pad ? 36 : 17
@@ -15,6 +16,7 @@ struct EndingStory2: View {
     @State var showNext : [Bool] = Array(repeating: false, count: 7)
     @State var showNextIndex : Int = 0
     @State var currentTypingIndex : Int = -1
+    @Binding var player : AVAudioPlayer!
     var body: some View {
         ZStack{
             Color.black
@@ -32,7 +34,7 @@ struct EndingStory2: View {
                             .frame(width: spacing)
                     }
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             withAnimation(.easeInOut(duration: 0.8)) {
                                 showNext[showNextIndex] = true
                             }
@@ -118,9 +120,12 @@ struct EndingStory2: View {
                 currentTypingIndex += 1
             }
         }
+        .onDisappear{
+            player.stop()
+        }
     }
 }
 
-#Preview {
-    EndingStory2()
-}
+//#Preview {
+//    EndingStory2(, player: <#Binding<AVAudioPlayer?>#>)
+//}

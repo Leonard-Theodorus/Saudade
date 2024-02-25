@@ -29,7 +29,7 @@ struct TouchLevelTutorial: View {
                             .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
                             .foregroundStyle(Color.LG_1)
                             .onAppear{
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                                     withAnimation(.easeInOut(duration: 1.5)) {
                                         currentTypingIndex += 1
                                     }

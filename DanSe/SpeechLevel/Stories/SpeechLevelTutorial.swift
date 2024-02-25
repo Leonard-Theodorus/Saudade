@@ -24,7 +24,6 @@ struct SpeechLevelTutorial: View {
                     HStack {
                         Spacer()
                             .frame(width: spacing)
-                        //TODO: Typewriter effect
                         Text(Constants.Instructions.chapter3FirstInstruction)
                             .multilineTextAlignment(.center)
                             .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
@@ -126,41 +125,8 @@ struct SpeechLevelTutorial: View {
                         }
                 }
                 
+                
                 if (currentTypingIndex >= 3){
-                    
-                    HStack{
-                        Spacer()
-                            .frame(width: spacing)
-                        Text(Constants.Instructions.chapter3ThirdInstruction)
-                            .multilineTextAlignment(.center)
-                            .font(.custom(Constants.contentFontName, size: fontSize, relativeTo: .largeTitle))
-                            .foregroundStyle(Color.LG_1)
-                        Spacer()
-                            .frame(width: spacing)
-                    }
-                    .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
-                            withAnimation(.easeInOut(duration: 0.8)) {
-                                showNext[nextIdx] = true
-                            }
-                        })
-                    }
-                }
-                Spacer()
-                    .frame(height: Constants.currentDevice == .pad ? 30 : 20)
-                if(nextIdx == 3 && showNext[nextIdx]){
-                    Text("Continue")
-                        .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 50 : 36, relativeTo: .title3))
-                        .foregroundStyle(Color.lBlue1)
-                        .onTapGesture {
-                            withAnimation(.easeInOut(duration: 0.5)) {
-                                showNext[nextIdx] = false
-                                nextIdx += 1
-                                currentTypingIndex += 1
-                            }
-                        }
-                }
-                if (currentTypingIndex >= 4){
                     HStack{
                         Spacer()
                             .frame(width: spacing)
@@ -183,7 +149,7 @@ struct SpeechLevelTutorial: View {
                 
                 Spacer()
                     .frame(height: 30)
-                if (currentTypingIndex >= 5){
+                if (currentTypingIndex >= 4){
                     
                     HStack{
                         Text(Constants.goodLuck)

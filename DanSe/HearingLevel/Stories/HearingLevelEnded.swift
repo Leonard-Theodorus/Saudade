@@ -29,7 +29,6 @@ struct HearingLevelEnded: View {
             HStack{
                 Spacer()
                     .frame(width: Constants.currentDevice == .pad ? 50 : 30)
-                //TODO: Instructions pake animasi lain
                 Text(Constants.chapter2Completion)
                     .multilineTextAlignment(.center)
                     .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 36 : 20, relativeTo: .largeTitle))

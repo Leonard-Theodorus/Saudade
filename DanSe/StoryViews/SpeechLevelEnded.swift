@@ -14,7 +14,6 @@ struct SpeechLevelEnded: View {
             HStack{
                 Spacer()
                     .frame(width: Constants.currentDevice == .pad ? 50 : 30)
-                //TODO: Story -> pake typwriter sama ""
                 Text(Constants.chapter3CompletionPrologue)
                     .multilineTextAlignment(.center)
                     .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 36 : 20, relativeTo: .largeTitle))
@@ -28,7 +27,6 @@ struct SpeechLevelEnded: View {
             HStack{
                 Spacer()
                     .frame(width: Constants.currentDevice == .pad ? 50 : 30)
-                //TODO: Instructions pake animasi lain
                 Text(Constants.chapter3Completion)
                     .multilineTextAlignment(.center)
                     .font(.custom(Constants.contentFontName, size: Constants.currentDevice == .pad ? 36 : 20, relativeTo: .largeTitle))
