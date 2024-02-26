@@ -43,6 +43,7 @@ extension HearingLevel {
             }()
             point.x = Utils.filter(point: point.x, filterVal: 0.75)
             point.y = Utils.filter(point: point.y, filterVal: 0.75)
+            print(point)
             DispatchQueue.main.async {
                 let currentTargetCoordinate = self.target.view.convert(self.target.view.center, to: self.view)
                 let xHit : Bool = self.checkForHit(in: ((currentTargetCoordinate.x / 2) - self.targetWidth) ... ((currentTargetCoordinate.x / 2) + self.targetWidth) , point: point.x)

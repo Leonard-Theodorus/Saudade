@@ -11,10 +11,7 @@ import SwiftUI
 struct DanSeApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
-                PreEndingStory()
-            }
-//            MainMenu()
+            MainMenu()
         }
     }
 }
